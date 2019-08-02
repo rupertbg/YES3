@@ -1,0 +1,21 @@
+PublicAccess:
+  Block: true
+  Configuration:
+    Allow:
+      BlockPublicAcls: true
+      IgnorePublicAcls: true
+      BlockPublicPolicy: false
+      RestrictPublicBuckets: false
+    Block:
+      BlockPublicAcls: true
+      IgnorePublicAcls: true
+      BlockPublicPolicy: true
+      RestrictPublicBuckets: true
+  # Buckets:
+  #   - Name: bucket-with-custom-policy
+  #     Configuration:
+  #       BlockPublicAcls: false
+  #       IgnorePublicAcls: true
+  #       BlockPublicPolicy: false
+  #       RestrictPublicBuckets: false
+  #   - this-bucket-gets-default-policy
